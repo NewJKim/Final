@@ -1,0 +1,20 @@
+# Writing Assistant Configuration Template
+# Copy this file to config.properties and add your real API key
+
+# Cohere API Configuration (NEW - Free tier with 100 RPM!)
+api.key=your-cohere-api-key-here
+api.endpoint=https://api.cohere.ai/v1/chat
+
+# Alternative: Use environment variable (more secure!)
+# Set COHERE_API_KEY environment variable instead of using this file
+# Example (Linux/Mac): export COHERE_API_KEY="your-key-here"
+# Example (Windows): set COHERE_API_KEY=your-key-here
+
+# API Settings
+max.tokens=500
+temperature=0.7
+
+# IMPORTANT:
+# 1. Never commit config.properties to Git!
+# 2. Add config.properties to .gitignore
+# 3. Get your API key from: https://dashboard.cohere.com/api-keys
