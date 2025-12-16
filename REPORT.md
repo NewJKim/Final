@@ -1,7 +1,7 @@
 # System Design Report
 
 **Name:** James Kim  
-**Date:** 21 Nov 2025  
+**Date:** 15 DEC 2025  
 **Project:** AI Writing Assistant
 
 ---
@@ -58,7 +58,7 @@ This application follows the **Model-View-Controller (MVC)** architectural patte
 
 ## Design Patterns
 
-### 1. Strategy Pattern ✅
+### 1. Strategy Pattern 
 
 **Purpose:** Allow different writing algorithms to be swapped at runtime.
 
@@ -79,7 +79,7 @@ strategy = new ProfessionalWritingStrategy(apiService);
 
 ---
 
-### 2. Factory Pattern ✅
+### 2. Factory Pattern 
 
 **Purpose:** Centralize complex object creation (API request JSON).
 
@@ -96,7 +96,7 @@ JSONObject request = RequestFactory.createCohereRequest(prompt, maxTokens);
 
 ---
 
-### 3. Observer Pattern ✅
+### 3. Observer Pattern 
 
 **Purpose:** Decouple UI from model - View reacts to generation events.
 
@@ -119,7 +119,7 @@ public void onTextGenerated(String text) {
 
 ---
 
-### 4. Singleton Pattern ✅
+### 4. Singleton Pattern 
 
 **Purpose:** Ensure only one API client configuration exists.
 
@@ -137,7 +137,7 @@ APIClient client = APIClient.getInstance();
 
 ---
 
-### 5. Template Method Pattern ✅ (NEW!)
+### 5. Template Method Pattern
 
 **Purpose:** Define algorithm skeleton while letting subclasses customize steps.
 
@@ -165,7 +165,7 @@ public final String generateText(String input) {
 
 ## Four OOP Pillars
 
-### 1. Encapsulation ✅
+### 1. Encapsulation 
 
 **Definition:** Hide internal state, expose only necessary interfaces.
 
@@ -192,7 +192,7 @@ public class APIClient {
 
 ---
 
-### 2. Inheritance ✅
+### 2. Inheritance 
 
 **Definition:** Create new classes based on existing ones.
 
@@ -220,7 +220,7 @@ public class CreativeWritingStrategy extends AbstractWritingStrategy {
 
 ---
 
-### 3. Polymorphism ✅
+### 3. Polymorphism 
 
 **Definition:** Same interface, different implementations.
 
@@ -257,7 +257,7 @@ public class GenerationRequest {
 
 ---
 
-### 4. Abstraction ✅
+### 4. Abstraction 
 
 **Definition:** Hide complex implementation details, show only essentials.
 
@@ -424,19 +424,14 @@ public abstract class AbstractWritingStrategy {
 - The GUI layout and interactions
 - Error handling logic
 - Test cases
-- This documentation
 
 ### How I Ensured Understanding:
-- Typed all code myself (no copy-paste)
+- Typed all code myself
 - Added my own comments explaining logic
 - Tested every feature multiple times
 - Modified AI suggestions to fit my needs
 - Could explain any line of code if asked
 
-### Percentage Breakdown:
-- **Conceptual help from AI:** ~25% (pattern explanations, examples)
-- **Code I wrote:** ~75% (all implementation, testing, debugging)
-- **Understanding:** 100% (I can explain every part)
 
 ---
 
@@ -452,15 +447,5 @@ public abstract class AbstractWritingStrategy {
 - Refactoring (adding inheritance): 3 hours
 
 ---
-
-## Conclusion
-
-This project successfully demonstrates:
-- ✅ Complete MVC architecture
-- ✅ 5 design patterns (Strategy, Factory, Observer, Singleton, Template Method)
-- ✅ All 4 OOP pillars with clear examples
-- ✅ Real API integration with async processing
-- ✅ Comprehensive testing
-- ✅ Professional documentation
 
 The application is functional, well-structured, and demonstrates software engineering best practices.
