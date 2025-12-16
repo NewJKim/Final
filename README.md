@@ -71,16 +71,16 @@ All 10 tests should pass!
 **"Cannot connect"** → Check internet  
 **"Invalid key"** → Get new key from Cohere dashboard
 
-## Demo
-
-https://drive.google.com/file/d/1jWBGi_fEih6ozA13ta8n_f00vmizUFgY/view?usp=sharing
+## Demo (Fianl)
+https://drive.google.com/file/d/1SFtq9vSnlTTzM4nz-dAphEFBkdqfrLlo/view?usp=sharing
 
 Shows:
 - All 3 writing modes working
 - Save and load features
+- error handling
 
 ## Made By
 
 James Kim  
 CS 3560  
-21 Nov 2025
+15 DEC 2025
