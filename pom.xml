@@ -22,26 +22,35 @@
         <junit.version>5.9.3</junit.version>
     </properties>
 
-    <!-- Dependencies -->
     <dependencies>
-        <!-- JSON Processing (for OpenAI API) -->
+        <!-- JSON processing -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20230227</version>
         </dependency>
 
-        <!-- JUnit 5 for Testing -->
+        <!-- JUnit 5 (Jupiter) API -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
+            <version>5.9.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- JUnit 5 (Jupiter) Engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
+            <version>5.9.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit Platform Launcher (THIS WAS MISSING) -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.9.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
